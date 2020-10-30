@@ -64,14 +64,14 @@ body {
 	    display: grid;
 	    grid-template-columns: auto auto; /*grid 2 col*/
 	    justify-content: center;
-	    background-color: #008CBA; /*bg black color of entire grid */
+	    background-color: #000033; /*bg black color of entire grid */
 	    width: auto;
 	    padding: 10px 10px;
 	    margin: 10px 10px;
 	}
 	/*see line 25 44 50 69 75 93 99 118 124 143 in index.html for class used*/
 	.grid-item {
-    	background-color: #ffff80; /*bg light yellow color for grid items */
+    	background-color: #66b3ff; /*bg light blue color for grid items */
     	border: 5px solid #ff8533; /*border matching FG logo color*/
     	padding: 10px 15px;
     	margin: 10px 15px;
@@ -153,7 +153,7 @@ li {
 }
 
 button {
-	background-color: #0099cc; /*bg color matches FG logo*/
+	background-color: #ffb366; /*bg color matches FG logo*/
 }
 
 button.right:focus {
