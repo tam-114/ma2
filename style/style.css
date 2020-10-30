@@ -10,7 +10,7 @@
   	width: 75%;
 }
 
-/*see line 25 in style.css for Contemporary Brush font in use*/
+/*font-face for: Contemporary Brush font in use*/
 @font-face {
 	font-family: "Contemporary Brush";
     src: url("https://db.onlinewebfonts.com/t/8725ecbcc302435e92b5dd048ac86eb0.eot"); /* IE9*/
@@ -24,16 +24,16 @@
 /*see line 13 for body element in use*/
 body {
 	background-color: #ffb366; /*light orange bg*/
-	font-family: "Contemporary Brush"; /*see line 13 in style.css for src*/
+	font-family: "Contemporary Brush"; /*see line 14 in style.css for src*/
 }
 
  /*Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 900px) {/*changed from min-width*/
-	  .grid-quiz {
+@media only screen and (max-width: 899px) {/*max-width < */
+	  .grid-quiz {/*see line 23 in index.html*/
 	    display: grid;
 	    grid-template-columns: auto; /*becomes one grid*/
 	    justify-content: center;
-	    background: #000033; /*bg teal (trying dark blue)*/
+	    background: #000033; /*bg dark blue*/
 	    width: auto;
 	    padding: 10px 10px;
 	    margin: 10px 10px;
@@ -41,25 +41,24 @@ body {
 
 	/*see line 25 44 50 69 75 93 99 118 124 143 in index.html for class used*/
 	.grid-item {
-    	background-color: #33cccc; /*bg dark blue (trying teal)*/
-    	padding: 10px 15px;
-    	margin: 10px 15px;
-    	justify-content: center;
+    	background-color: #33cccc; /*bg teal*/
+    	padding: 10px 10px;
+    	margin: 10px 10px;
 	}
 
 }
 
 /*Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 900px) {/*changed from min-width*/
-	/*see line 23 in index.html for class used*/
-
+@media only screen and (min-width: 900px) {/*min-width > */
+	/*see line 27 52 77 101 126 in index.html for tag use*/
 	h2 {
 		color: #ffb366; /*light orange color*/
 	}
-
+	/*see lines 29 54 79 103 128 in index.html for tag use*/
 	h3 {
 		color: #ffb366; /*light orange color*/
 	}
+	/*see line 23 in index.html for class use*/
 	.grid-quiz {
 	    display: grid;
 	    grid-template-columns: auto auto; /*grid 2 col*/
@@ -69,45 +68,48 @@ body {
 	    padding: 10px 10px;
 	    margin: 10px 10px;
 	}
+
 	/*see line 25 44 50 69 75 93 99 118 124 143 in index.html for class used*/
 	.grid-item {
     	background-color: #66b3ff; /*bg light blue color for grid items */
-    	border: 5px solid #ff8533; /*border matching FG logo color*/
-    	padding: 10px 15px;
-    	margin: 10px 15px;
-    	justify-content: center;
+    	border: 5px solid #ff8533; /*border orange*/
+    	padding: 10px 10px;
+    	margin: 10px 10px;
 	}
 
 }
 
-/*Large devices (laptops/desktops, 992px and up)
-@media only screen and (min-width: 992px) { changed from min-width, only works as min-width look into what it means*/
-
-/*see lines 27 52 77 101 126 in index.html for class used*/
+/*see lines 27 52 77 101 126 in index.html for tag use*/
 h2 {
+	padding-left: 15px;
 	color: #000033; /*dark blue font*/
-	text-align: center;
+	text-align: left;
 	font-size: 45px;
 }
-/*see lines 29 54 79 103 128 in index.html for class used*/
+
+/*see lines 29 54 79 103 128 in index.html for tag use*/
 h3 {
+	padding-left: 15px;
 	color: #000033;
-	text-align: center;
+	text-align: left;
 	font-size: 30px;
 }
 
+/*see line 17 for h4 tag use*/
 h4 {
 	text-align: center;
 	color: #000033;
 	font-size: 30px;
 }
 
+/*see line 19 in index.html for tag use*/
 h5 {
 	text-align: center;
 	font-size: 20px;
 	color: #000033;
 }
 
+/*see line 150 for tag use*/
 p {
 	text-align: center;
 	color: #000033;
@@ -123,6 +125,7 @@ p {
 	padding-right: 2px;
 	position: relative;
 }
+
 /*see lines 33-39, 58-64, 82-88, 107-113, 132-138 in index.html for class used*/
 .choice {
   border: none;
@@ -130,35 +133,35 @@ p {
   padding: 15px 15px;
   text-align: center;
   text-decoration: none;
-  display: block;
   font-size: 20px;
   font-family: "Contemporary Brush";
-  margin: 4px 4px;
   cursor: pointer;
-  justify-content: center;
 }
+
 
 /*see lines 31 56 80 105 130 in index.html for ol element used*/
 ol {
-	list-style: none;
+	list-style:none;
 	justify-content: center;
-	padding: auto 0;
-	margin: 5px 50px;
+	padding: 10px 10px;
+	margin: auto;
 }
 
 /*see lines 33-39, 81-88, 107-113, 132-138 in index.html for li element used*/
 li {
 	text-decoration: none;
 	justify-content: center;
+	display: block;
 }
-
+/*see lines 33-39, 81-88, 107-113, 132-138 in index.html for button tag used*/
 button {
-	background-color: #ffb366; /*bg color matches FG logo*/
+	background-color: #ffb366; /*bg color matches body bg color*/
 }
-
+/*see lines 37 64 84 111 134 in index.html for right class use*/
 button.right:focus {
 	background-color: green;
 }
+/*see lines 33-39, 81-88, 107-113, 132-138 in index.html for li element used*/
 button.wrong:focus {
 	background-color: red;
 }
